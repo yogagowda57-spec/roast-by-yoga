@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROAST BY YOGA'S TECH SKILL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Orbitron',sans-serif;
+}
+
+body{
+    background:black;
+    overflow:hidden;
+    color:#00ff99;
+}
+
+/* BACKGROUND */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at center,#003322 0%,black 70%);
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:200%;
+    height:200%;
+    background-image:
+    linear-gradient(rgba(0,255,153,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,153,0.05) 1px, transparent 1px);
+    background-size:40px 40px;
+    animation:gridMove 12s linear infinite;
+    z-index:-1;
+}
+
+@keyframes gridMove{
+    from{
+        transform:translate(0,0);
+    }
+    to{
+        transform:translate(-40px,-40px);
+    }
+}
+
+.container{
+    width:92%;
+    max-width:1000px;
+    height:92vh;
+    margin:20px auto;
+    border:2px solid #00ff99;
+    border-radius:25px;
+    overflow:hidden;
+    backdrop-filter:blur(8px);
+    box-shadow:
+    0 0 20px #00ff99,
+    0 0 60px #00ff99;
+    display:flex;
+    flex-direction:column;
+}
+
+/* HEADER */
+
+.header{
+    padding:20px;
+    text-align:center;
+    font-size:2rem;
+    font-weight:900;
+    background:#001a12;
+    border-bottom:2px solid #00ff99;
+    text-shadow:
+    0 0 10px #00ff99,
+    0 0 20px #00ff99;
+    animation:glitch 1s infinite;
+}
+
+@keyframes glitch{
+    0%{transform:translate(0);}
+    20%{transform:translate(-2px,2px);}
+    40%{transform:translate(2px,-2px);}
+    60%{transform:translate(-1px,1px);}
+    80%{transform:translate(1px,-1px);}
+    100%{transform:translate(0);}
+}
+
+/* CHAT */
+
+.chatbox{
+    flex:1;
+    overflow-y:auto;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.message{
+    padding:18px;
+    border-radius:18px;
+    max-width:80%;
+    line-height:1.7;
+    animation:fade 0.3s ease;
+    position:relative;
+}
+
+.user{
+    background:#004d33;
+    color:white;
+    margin-left:auto;
+    border:1px solid #00ff99;
+}
+
+.bot{
+    background:#111;
+    border:1px solid #00ff99;
+    box-shadow:0 0 15px #00ff99;
+}
+
+.bot::before{
+    content:"☠ AI ROAST";
+    position:absolute;
+    top:-12px;
+    left:15px;
+    background:black;
+    padding:2px 10px;
+    font-size:0.7rem;
+    color:#00ff99;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* INPUT */
+
+.input-area{
+    display:flex;
+    gap:10px;
+    padding:20px;
+    background:#001a12;
+    border-top:2px solid #00ff99;
+}
+
+input{
+    flex:1;
+    padding:16px;
+    background:black;
+    color:#00ff99;
+    border:2px solid #00ff99;
+    border-radius:12px;
+    outline:none;
+    font-size:1rem;
+}
+
+input:focus{
+    box-shadow:0 0 20px #00ff99;
+}
+
+button{
+    padding:16px 28px;
+    background:#00ff99;
+    color:black;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:900;
+    transition:0.2s;
+}
+
+button:hover{
+    transform:scale(1.07);
+    box-shadow:0 0 20px #00ff99;
+}
+
+/* LIFE BAR */
+
+.status{
+    display:flex;
+    justify-content:space-around;
+    background:black;
+    padding:10px;
+    border-top:1px solid #00ff99;
+    font-size:0.8rem;
+}
+
+.bar{
+    width:120px;
+    height:10px;
+    background:#111;
+    border-radius:10px;
+    overflow:hidden;
+    margin-top:5px;
+}
+
+.fill{
+    height:100%;
+    background:#00ff99;
+    width:40%;
+    animation:pulse 1s infinite alternate;
+}
+
+@keyframes pulse{
+    from{opacity:0.5;}
+    to{opacity:1;}
+}
+
+/* SHAKE */
+
+.shake{
+    animation:shake 0.3s;
+}
+
+@keyframes shake{
+    0%{transform:translateX(0);}
+    25%{transform:translateX(-5px);}
+    50%{transform:translateX(5px);}
+    75%{transform:translateX(-5px);}
+    100%{transform:translateX(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container" id="container">
+
+<div class="header">
+🔥 ROAST BY YOGA'S TECH SKILL 💀
+</div>
+
+<div class="chatbox" id="chatbox">
+
+<div class="message bot">
+Welcome human disappointment ☠️<br><br>
+Type anything:
+<ul>
+<li>“I failed exam”</li>
+<li>“I love coding”</li>
+<li>“I go gym”</li>
+<li>“I am broke”</li>
+</ul>
+and prepare for emotional damage 💀
+</div>
+
+</div>
+
+<div class="input-area">
+<input type="text" id="userInput" placeholder="Tell your sad story...">
+<button onclick="sendMessage()">ROAST ME</button>
+</div>
+
+<div class="status">
+<div>
+Life Motivation
+<div class="bar"><div class="fill"></div></div>
+</div>
+
+<div>
+Assignment Survival
+<div class="bar"><div class="fill" style="width:20%"></div></div>
+</div>
+
+<div>
+Brain Loading
+<div class="bar"><div class="fill" style="width:5%"></div></div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+const chatbox = document.getElementById("chatbox");
+const container = document.getElementById("container");
+
+function addMessage(text,sender){
+
+    const msg = document.createElement("div");
+    msg.classList.add("message",sender);
+    msg.innerHTML = text;
+
+    chatbox.appendChild(msg);
+
+    chatbox.scrollTop = chatbox.scrollHeight;
+}
+
+function roastAI(input){
+
+    input = input.toLowerCase();
+
+    // EXTRA AGGRESSIVE ROASTS
+
+    if(input.includes("study")){
+        return `
+        📚 BRO STUDIES LIKE GOVERNMENT WEBSITE LOADING 💀<br><br>
+        You open book... read 2 lines... suddenly ceiling fan becomes interesting ☠️
+        `;
+    }
+
+    if(input.includes("exam")){
+        container.classList.add("shake");
+
+        setTimeout(()=>{
+            container.classList.remove("shake");
+        },400);
+
+        return `
+        🚨 EXAM DETECTED 🚨<br><br>
+        Your syllabus seeing you like:
+        “Bro... we meeting for first time?” 💀<br><br>
+        Even calculator scared for your marks ☠️
+        `;
+    }
+
+    if(input.includes("coding")){
+
+        return `
+        👨‍💻 CODING SKILL ANALYSIS:<br><br>
+        10% coding<br>
+        90% searching StackOverflow 💀<br><br>
+        Your code works only after removing random semicolon ☠️
+        `;
+    }
+
+    if(input.includes("love")){
+
+        return `
+        ❤️ LOVE MODE ACTIVATED 💀<br><br>
+        You reply in 2 seconds.<br>
+        Your crush replies in 2 business days ☠️
+        `;
+    }
+
+    if(input.includes("gym")){
+
+        return `
+        🏋️ GYM DETECTED 💀<br><br>
+        Bro bought protein powder just to take mirror selfies ☠️<br><br>
+        Dumbbells fear you because you never lift them 😂
+        `;
+    }
+
+    if(input.includes("money") || input.includes("broke")){
+
+        return `
+        💸 FINANCIAL STATUS:<br><br>
+        Wallet so empty even ATM said:
+        “better luck next time” 💀
+        `;
+    }
+
+    if(input.includes("project")){
+
+        return `
+        📁 PROJECT ANALYSIS 💀<br><br>
+        Copied from GitHub... changed background color... called it innovation ☠️
+        `;
+    }
+
+    if(input.includes("sleep")){
+
+        return `
+        😴 SLEEP MODE DETECTED 💀<br><br>
+        You sleep like your family owns the mattress company ☠️
+        `;
+    }
+
+    if(input.includes("assignment")){
+
+        return `
+        📝 ASSIGNMENT PANIC 💀<br><br>
+        Deadline tomorrow... motivation next year ☠️
+        `;
+    }
+
+    if(input.includes("crush")){
+
+        return `
+        💔 CRUSH STATUS:<br><br>
+        Bro texting “hi” with full confidence ☠️<br><br>
+        Seen ✓<br>
+        Reply ❌
+        `;
+    }
+
+    if(input.includes("github")){
+
+        return `
+        🐙 GITHUB REPORT 💀<br><br>
+        Contribution graph emptier than your attendance ☠️
+        `;
+    }
+
+    if(input.includes("future")){
+
+        return `
+        🔮 FUTURE ANALYSIS:<br><br>
+        Loading...<br><br>
+        ERROR 404:<br>
+        Motivation not found ☠️
+        `;
+    }
+
+    // RANDOM INSANE ROASTS
+
+    const randomRoasts = [
+
+        "Your productivity entered chat... then disconnected ☠️",
+
+        "Bro opens laptop only to watch YouTube tutorials he never follows 💀",
+
+        "Even your alarm clock gave up on you ☠️",
+
+        "Your WiFi faster than your career growth 💀",
+
+        "You have 99 problems and all started after saying “I’ll do it tomorrow” ☠️",
+
+        "NASA can detect planets but still can't find your motivation 💀",
+
+        "You study so little even calculator forgot your name ☠️",
+
+        "Your brain buffering harder than 2G internet 💀",
+
+        "You and success play hide and seek forever ☠️"
+
+    ];
+
+    return randomRoasts[Math.floor(Math.random()*randomRoasts.length)];
+}
+
+function sendMessage(){
+
+    const input = document.getElementById("userInput");
+    const text = input.value.trim();
+
+    if(text === "") return;
+
+    addMessage(text,"user");
+
+    input.value = "";
+
+    setTimeout(()=>{
+
+        const roast = roastAI(text);
+
+        addMessage(roast,"bot");
+
+    },600);
+}
+
+document.getElementById("userInput")
+.addEventListener("keypress",function(e){
+
+    if(e.key==="Enter"){
+        sendMessage();
+    }
+
+});
+
+</script>
+
+</body>
+</html>
