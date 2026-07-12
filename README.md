@@ -11,7 +11,7 @@ Roast by Yoga serves up random savage, funny, and completely unnecessary roasts.
 
 ---
 
-## 😂 About
+##  About Project.
 
 This project is built for one purpose:
 
