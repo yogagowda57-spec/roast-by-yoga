@@ -39,7 +39,7 @@ Just pure, premium-quality roasting.
 
 ---
 
-## 🛠️ Built With
+## 🛠️ Built With (frontend)
 
 * HTML5
 * CSS3
