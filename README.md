@@ -8,6 +8,9 @@ Roast by Yoga serves up random savage, funny, and completely unnecessary roasts.
 ## 🌐 Live Demo 
 
 **Try it here:** https://yogagowda57-spec.github.io/roast-by-yoga/
+
+
+
 SCAN HERE
 
 <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/f431897b-f478-4d29-8ca3-3368127a463c" />
