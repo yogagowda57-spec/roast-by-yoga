@@ -10,7 +10,7 @@ Roast by Yoga serves up random savage, funny, and completely unnecessary roasts.
 **Try it here:** https://yogagowda57-spec.github.io/roast-by-yoga/
 
 
-          OR
+OR
 
 
 
