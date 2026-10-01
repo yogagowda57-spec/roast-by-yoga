@@ -24,7 +24,7 @@ SCAN HERE
 
 This project is built for one purpose:
 
-> **To destroy egos... one roast at a time.**
+> **To destroy egos... one roast at all time.**
 
 No AI therapist.
 No motivational quotes.
@@ -42,7 +42,7 @@ Just pure, premium-quality roasting.
 * 📱 Responsive design
 * ⚡ Fast and lightweight
 * 💀 Guaranteed emotional damage*
-* ☕ Runs entirely in your browser
+* ☕ Runs entirely in your browser(free)
 
 > *Side effects may include laughing, fake anger, and plotting revenge.
 
