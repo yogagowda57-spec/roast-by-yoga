@@ -39,7 +39,7 @@ Just pure, premium-quality roasting.
 * 🔥 Random hilarious roasts
 * 😂 One-click roast generator
 * 🎲 Different roast every time
-* 📱 Responsive design
+* 📱 Responsive design(for all device)
 * ⚡ Fast and lightweight
 * 💀 Guaranteed emotional damage*
 * ☕ Runs entirely in your browser(free)
