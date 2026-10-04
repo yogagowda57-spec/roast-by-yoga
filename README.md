@@ -1,4 +1,4 @@
-# 🔥 Roast by Yogananda (Don't  try)
+# 🔥 Roast by Yoga
 
 **Feeling a little too confident today?**
 Perfect. This website is here to fix that. 😈
