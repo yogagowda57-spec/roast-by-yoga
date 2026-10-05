@@ -3,7 +3,7 @@
 **Feeling a little too confident today?**
 Perfect. This website is here to fix that. 😈
 
-Roast by Yoga serves up random savage, funny, and completely unnecessary roasts. Whether you're roasting your friends (or yourself), expect emotional damage... with style.
+Roast by Yoga serves up random savage, funny, and completely unnecessary roasts. Whether you're roasting your friends (or yourself), expect emotional damage... with style to reach a level.
 
 ## 🌐 Live Demo 
 
